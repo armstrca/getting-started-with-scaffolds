@@ -43,7 +43,7 @@ RUN { echo && echo "PS1='\[\e]0;\u \w\a\]\[\033[01;32m\]\u\[\033[00m\] \[\033[01
 
 ### Student user (2) ###
 USER student
-# use sudo so that user does not get sudo usage info on (the first) login
+# use sudo so that user does not get sudo usage info on (the .first) login
 RUN sudo echo "Running 'sudo' for container: success" && \
     # create .bashrc.d folder and source it in the bashrc
     mkdir /home/student/.bashrc.d && \
